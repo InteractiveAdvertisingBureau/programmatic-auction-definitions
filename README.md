@@ -2,6 +2,9 @@
 
 # **Programmatic Auction Definitions**
 
+#### Executive Summary	
+The Media Rating Council (MRC’s) set standards for transparency, disclosure and reporting of various aspects and results of digital advertising auctions via their Digital Advertising Auction Transparency working group. In collaboration with these efforts, Tech Lab was asked to provide a primer and glossary about digital auctions. This document will help give all ecosystem participants common vocabulary and understanding of the way a digital auction works.
+
 
 #### Contact
 For more information, or to get involved, please email support@iabtechlab.com.
