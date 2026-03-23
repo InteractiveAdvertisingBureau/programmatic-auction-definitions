@@ -106,3 +106,45 @@ Once the selling platform receives notifications of rendering and transactions, 
 
 #### Step 12) Reconciliation: 
 While this document won’t cover this in detail, it's acknowledged that most companies participating in auctions have monthly processes in which numbers between systems match up, and manage discrepancies.
+
+### Defined Terms
+
+**Ad Context:** The set of surrounding environmental factors, content attributes and user attributes of a digital session used to determine the relevance, safety, and suitability of an ad placement. 
+
+**Ad Inventory Controller:** An entity that has the right of sale for the ad opportunity. 
+
+**Ad Opportunity:** The point at which a user activates an ad placement and triggers an ad request by loading web or app content or streaming audio or video content; also referred to as an Impression Opportunity.
+
+**Ad Placement:** The specific area or moment within digital content – such as a webpage, video, or audio stream – designated as a container for an advertisement to be served.
+
+**Ad Rendering:** the act of the ad creative being painted on the screen, streamed, or added to the Document Object Model within the context it’s intended to display in. Rendering does not always indicate viewability.
+
+**Ad Request:** The information about the ad impression to be auctioned. 
+
+**Ad Request Initiators:** The systems that create ad requests, at the instruction of the ad inventory owner. 
+
+**Auction:** The process an entity receiving competing bids uses to qualify, evaluate, and decide which to pursue and which to ignore. Decisions are based on the relative value of each bid.
+
+**Auctioneer:** a system that solicits bids to buy inventory from demand partners.
+
+**Bid Price:** What the demand side platform is willing to pay.
+
+**Bid Response:** The information about the ad from a buying platform and the offer that the buyer is willing to make for the impression. 
+
+**Bid Solicitation:** An ad-request initiator requesting that bid requests be generated and bid response solicited from upstream systems.
+
+**Billable Event:** An event that signals that the auction is billable.
+
+**Buying Platform:** An entity that services advertising campaigns by evaluating, based on the information provided in ad requests they receive, impression opportunities that meet campaign requirements and making offers to purchase them. 
+
+**Final Auctioneer:** The system that determines which bid, if any, is accepted and is given the impression opportunity. This is often the publisher’s ad server.
+
+**Loss URL (lurl):** the bid loss notification URL provided in the bid response by the selling platform that can be called after the auction to convey to a buying platform why they lost the auction. 
+
+**Received Bids:** returned bids to the selling platform that are technically qualified to enter an auction.
+
+**Returned Bids:** all bids returned to the auctioneer, pre qualification.
+
+**Selling Platform:** An entity that routes ad requests from an ad request initiator to potential additional entities in the supply chain. 
+
+**Unauthorized Ad Request:** an ad request that does not meet with ads.txt and seller.json validation, indicating that the seller is not authorized by the inventory owner to sell the listed inventory.
