@@ -63,11 +63,15 @@ Ad request initiator will create an ad request for a selling platform, populatin
 A selling platform receives the request and should validate the ad request. There are many steps here including supply chain authorization by the seller (this may include validating ads.txt, sellers.json, and the supply chain object), validation of the device and IDs and other business process checks.
 If the ad request is malformed or unauthorized, then processing should stop.
 
+![](assets/3.4.png)
+
 #### Step 3) Ad Request Enrichment: 
 A selling platform may enrich the inventory owner’s ad request with additional features, such as audience data based on the relationship of the intended recipient.   
  
 #### Step 4) Bid Solicitation: 
 Ad requests are sent to eligible demand partners. Not all requests are sent to every demand partner. This could be due to business rules (e.g. a demand partner does not want traffic from a certain geography) or algorithmic decisions (e.g. the sending system predicts no response from the buying system).
+
+![](assets/5-7.png)
 
 #### Step 5) Bid: 
 Buying platforms will make their own determinations on how to decide which bid(s) to return. This may include evaluation of multiple campaigns, and the value of the relative value of the impression to the various campaigns. The solicitation step results in four general conditions: You may receive no response, an error, a no-bid response, or a response with bid(s).
@@ -82,6 +86,8 @@ Returned bids are the bids received from the buying platform(s). They must pass 
 - missing fields required by the seller
 
 This step will result in zero or more bids that the seller can further evaluate.
+
+![](assets/8-10.png)
 
 #### Step 7) Qualifying Received Bids: 
 For the bids that pass the technical validation step, the next step is business rules qualification. This includes checking the bid’s price against pricing rules, verifying the bid’s seat and the advertiser against any seller constraints like allow and block lists (e.g. categories, ad domains, buyer seats, creatives IDs, etc.). The process may also validate that bids with DealIDs conform to the deal terms. This step will result in zero or more bids that the seller has determined are acceptable.
@@ -103,6 +109,8 @@ At time of delivery, various beacons should fire to notify participants that an 
 
 #### *Direct Demand* 
 Further commenting on step 10, it should be noted that the selling platform’s winning bid does not equate to the winning bid for the final auctioneer. In many cases, the final auctioneer, e.g. publisher ad server, may receive the winning bid from the selling platform and never render it, as another business rule filled the ad request slot instead. Examples of this may include direct sold demand by the publisher or another programmatic auction triggered subsequently achieving a higher yield for the ad inventory owner. 
+
+![](assets/11&12.png)
 
 #### Step 11) Transaction Recording: 
 Once the selling platform receives notifications of rendering and transactions, the bid should be recorded as impressions and transactions. Fees, clearing price, billable price, and other telemetry should be recorded in a ledger or ledger-like system. Notification of such is also returned to the buying platform for record keeping.
