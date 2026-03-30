@@ -25,6 +25,7 @@ These terms will help orient the reader through our first simplified auction exa
 #### Simplified Example
 An ad inventory controller instructs an ad request initiator to send an ad request to selling platforms. The selling platforms in turn send requests to buying platforms. Buying platforms may then reply to the request with bid responses. The collection of bid responses returned to sellers enters into an auction. Winners are determined and the final auctioneer concludes which ads to render in the stated ad environment.
 
+![](assets/MRCAuction_Simple_v2.png)
 
 #### Auctions and Value
 All stages in the programmatic supply chain may conduct auctions. Some may be simple, and some may be complex, but all of them take a list of bids and determine which, one or many, have the highest relative value to be returned upstream. 
@@ -41,6 +42,8 @@ Value is a critical concept in all stages of the flow. Few auctions are executed
 
 ### Auction Workflow
 *Steps 0-2 are commonly executed between the ad inventory controller and the ad request initiators.*
+
+![](assets/0-2.png)
 
 #### Step 0) Ad Inventory Setup: 
 Ad inventory owners will have configured placement(s) detailing where and when they wish ads to be shown on their website or in app, usually integrated with a final auctioneer. This is generally the ad inventory owner’s ad server. It holds a definitive configuration for the ad slots. It is ultimately responsible for filling the slot with an ad, whether from a campaign the ad server has itself (direct sold), or by reaching out to programmatic partners that may have demand for that opportunity.
