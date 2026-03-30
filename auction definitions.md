@@ -87,10 +87,10 @@ Returned bids are the bids received from the buying platform(s). They must pass 
 
 This step will result in zero or more bids that the seller can further evaluate.
 
-![](assets/8-10.png)
-
 #### Step 7) Qualifying Received Bids: 
 For the bids that pass the technical validation step, the next step is business rules qualification. This includes checking the bid’s price against pricing rules, verifying the bid’s seat and the advertiser against any seller constraints like allow and block lists (e.g. categories, ad domains, buyer seats, creatives IDs, etc.). The process may also validate that bids with DealIDs conform to the deal terms. This step will result in zero or more bids that the seller has determined are acceptable.
+
+![](assets/8-10.png)
 
 #### Step 8) Competition: 
 Each bid may compete within the auction at a determined auction price. Price may incorporate buying platform fees or discounts to establish an auction price that represents the net price for the seller. The price used in an auction varies by participant in the digital supply chain. A winner(s) for this auction is selected.
